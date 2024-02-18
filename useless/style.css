@@ -1,0 +1,27 @@
+.heading{
+    text-align: center;
+    font-family: DM serif;
+}
+
+.container {
+        
+        
+        display: flex;
+        height: 80vh;
+        /* justify-content: center; */
+        align-items: center;
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        /* align-content: center; */
+
+        flex-flow:row wrap;
+        gap: 10px;
+      }
+.items{
+        height: 276px;
+        width: 304px;
+        border:1px solid black;  
+        margin: 4px;
+        background: Frame 98.png ;
+        
+      }

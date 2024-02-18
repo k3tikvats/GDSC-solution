@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url("https://fonts.cdnfonts.com/css/product-sans");
+
+
+.page {
+  margin-top: 50px;
+  display: flex;
+}
+
+.card {
+  width: 350px;
+  height: 400px;
+  font-family: "Product Sans ",sans-serif;
+  border-radius: 15px;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.11);
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  padding: 12px 21px 29px;
+}
+.card1 {
+  
+  scale: 0.85;
+  transform: translateX(80%) rotate(-13deg);
+}
+.card2 {
+  
+  z-index:1;
+  transform: translateX();
+}
+.card3 {
+  scale: 0.85;
+  transform: translateX(-80%) rotate(13deg);
+}
+.card2:hover{
+   animation: ease-in 1s bringdown infinite;
+  
+}
+.card3:hover {
+  animation: ease-in 1s bringup infinite;
+  
+}
+.head{
+  display:flex;
+  justify-content: space-between;
+}
+.tg {
+  align-self: start;
+  justify-content: center;
+  border: 2px solid black;
+  border-radius: 17.42px;
+  margin-top: 6px;
+  padding: 7px 17px;
+}
+
+.heading{
+  font-family: 'DM Serif Display';
+  font-weight: 100;
+
+}
+
+.content {
+  text-align: center;
+  align-self: center;
+}
+.content p {
+  text-align: center;
+  margin-top: 33px;
+}
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 33px;
+}
+.img{
+  width:132px;
+}
+.button button {
+  margin: auto;
+  align-self: center;
+  justify-content: center;
+  border-radius: 23.64px;
+  border: 2px solid black;
+  font-size: 19px;
+}
+.button img {
+  object-fit: auto;
+  object-position: center;
+  align-items: center;
+  width: 15px;
+}
+
+@keyframes bringup {
+  0% {
+    z-index:2;
+      
+  }
+  
+  100% {
+    z-index:2;
+    transform: rotate(0deg) translateX(-100%);
+    scale: 1;
+  }
+}
+@keyframes bringdown {
+  0% {
+    transform: rotate(0deg) translateX(-100%);
+  }
+  100% {
+    transform: rotate(-13deg) translateX(-20%);
+    scale:0.85;
+  }
+}
+
